@@ -17,7 +17,7 @@ const StarSvg = () => (
     style={{ 
       shapeRendering: 'geometricPrecision', 
       textRendering: 'geometricPrecision', 
-      imageRendering: 'optimizeQuality', 
+      imageRendering: 'auto', 
       fillRule: 'evenodd', 
       clipRule: 'evenodd' 
     }}

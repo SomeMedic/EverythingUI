@@ -30,7 +30,7 @@
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build:lib": "tsc && vite build",
+    "build:lib": "tsc -p tsconfig.build.json && vite build",
     "prepublishOnly": "npm run build:lib",
     "prepare": "npm run build:lib"
   },

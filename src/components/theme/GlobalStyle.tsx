@@ -1,7 +1,7 @@
 'use client';
 
 import { createGlobalStyle } from 'styled-components';
-import { GlobalKeyframes } from '@/components/buttons/SparkleButton/styles';
+import { GlobalKeyframes } from '../buttons/SparkleButton/styles';
 import { ThemeColors } from './index';
 
 export const GlobalStyle = createGlobalStyle<{ theme: ThemeColors }>`

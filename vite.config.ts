@@ -8,14 +8,20 @@ export default defineConfig({
     react(),
     dts({
       insertTypesEntry: true,
+      tsconfigPath: './tsconfig.build.json'
     }),
   ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  },
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/components/index.ts'),
       name: 'EverythingUI',
       formats: ['es', 'umd'],
-      fileName: (format) => `everything-ui.${format}.js`,
+      fileName: (format: string) => `everything-ui.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'styled-components'],

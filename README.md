@@ -1,7 +1,7 @@
 # EverythingUI - React and Next.js UI library with components what I love
 
 [![npm version](https://img.shields.io/npm/v/@somemedic/everything-ui.svg)](https://www.npmjs.com/package/@somemedic/everything-ui)
-[![License](https://img.shields.io/npm/l/@somemedic/everything-ui.svg)](https://github.com/yourusername/everything-ui/blob/main/LICENSE)
+[![License](https://img.shields.io/npm/l/@somemedic/everything-ui.svg)](https://github.com/SomeMedic/EverythingUI/blob/main/LICENSE)
 
 A modern, customizable UI component library built with React and Next.js. This library is actively maintained and regularly updated with new components.
 
