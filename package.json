@@ -1,14 +1,38 @@
 {
-  "name": "everything-ui",
+  "name": "@somemedic/everything-ui",
   "version": "0.1.0",
-  "private": true,
+  "description": "React and Next.js UI library with components what I love",
+  "author": "SomeMedic",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SomeMedic/EverythingUI.git"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "ui",
+    "components",
+    "typescript",
+    "styled-components"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build:lib": "tsc && vite build",
+    "prepublishOnly": "npm run build:lib",
+    "prepare": "npm run build:lib"
   },
   "dependencies": {
     "next": "14.1.0",
@@ -28,10 +52,13 @@
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.57",
     "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.1.0",
     "eslint-plugin-storybook": "^0.8.0",
     "storybook": "^8.5.6",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite": "^6.1.0",
+    "vite-plugin-dts": "^4.5.0"
   }
 }
