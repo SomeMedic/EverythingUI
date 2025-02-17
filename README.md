@@ -75,11 +75,11 @@ function MyComponent() {
 
 ## 📚 Documentation
 
-For full documentation and live examples, visit our Storybook:
+For full documentation and live examples, run:
 
 ```bash
-# Run Storybook locally
-npm run storybook
+# Run Dev Mode locally
+npm run dev
 ```
 
 ## 🤝 Contributing
